@@ -34,6 +34,20 @@ async function fetchData() {
     text.value = null;
   }
 }
+
+watch(
+  () => store._name,
+  (value) => {
+    text.value = null;
+  }
+);
+
+watch(
+  () => store._gender,
+  (value) => {
+    text.value = null;
+  }
+);
 </script>
 <template>
   <ClientOnly>

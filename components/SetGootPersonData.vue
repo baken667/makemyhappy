@@ -23,7 +23,10 @@ const valdation = yup.object({
 });
 
 const submit = (values: any) => {
-  store.setName(values.name);
+  const name: string = [...values.name]
+    .map((char, index) => (index === 0 ? char.toUpperCase() : char))
+    .join("");
+  store.setName(name);
   store.setGender(values.gender);
 
   store.setFormVisibilaty(true);
