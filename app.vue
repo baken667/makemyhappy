@@ -11,7 +11,7 @@ useHead({
   htmlAttrs: {
     lang: "ru",
   },
-  title: "Make Me Happy | @bakkka.wws",
+  title: "Make My Happy | @bakkka.wws",
 });
 
 const store = useAppStore();
