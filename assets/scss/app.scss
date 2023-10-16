@@ -1,0 +1,146 @@
+@use "variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    appearance: none;
+    border: none;
+    background: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+a {
+    color: var(--text-primary);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--text-secondary);
+        text-decoration: underline;
+    }
+}
+
+body {
+    background: var(--bg-primary);
+    font-family: "Raleway", sans-serif;
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.icon {
+    fill: var(--text-primary);
+}
+
+.main-layout {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer {
+    border-top: 1px solid var(--bg-secondary);
+    padding: 1.25rem 1rem;
+    font-size: 0.9rem;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    &__container {
+        max-width: var(--xxl);
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.form-group {
+    margin-top: 1rem;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        border: 1px solid var(--bg-secondary);
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        min-width: 250px;
+        margin-top: 0.25rem;
+        color: var(--text-primary);
+
+        &:focus {
+            border-color: var(--text-secondary);
+        }
+    }
+
+    &__label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--text-secondary);
+    }
+
+    &__error {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--error-color);
+        margin-top: 0.25rem;
+    }
+
+    &__button {
+        border: 1px solid var(--bg-secondary);
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        min-width: 250px;
+        color: var(--text-secondary);
+
+        &:hover {
+            border-color: var(--text-secondary);
+        }
+    }
+}
+
+.makemehappy-button {
+    border: 1px solid var(--text-secondary);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
+
+    &:hover {
+        box-shadow: 0 0 15px var(--shadows-default);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+}
+
+.happy-text {
+    margin-bottom: 2rem;
+}

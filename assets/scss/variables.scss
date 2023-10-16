@@ -1,0 +1,25 @@
+$light: #f4f4f4;
+$lightGray: #d1d1d1;
+$dark: #1f1f1f;
+$darkGray: #2e2d2d;
+$errorColor: #fb3d3d;
+
+$xxl: 1360px;
+
+:root {
+    --xxl: #{$xxl};
+    --bg-primary: #{$light};
+    --bg-secondary: #{$lightGray};
+    --text-primary: #{$dark};
+    --text-secondary: #{$darkGray};
+    --shadows-default: #{rgba($dark, 0.25)};
+    --error-color: #{$errorColor};
+}
+
+.dark {
+    --bg-primary: #{$dark};
+    --bg-secondary: #{$darkGray};
+    --text-primary: #{$light};
+    --text-secondary: #{$lightGray};
+    --shadows-default: #{rgba($light, 0.25)};
+}
