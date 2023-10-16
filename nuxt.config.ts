@@ -7,11 +7,14 @@ export default defineNuxtConfig({
       apiKey: "API-8780e73eb687d591fb170849153734525df55db0",
     },
   },
-  modules: ["@nuxtjs/color-mode", "@pinia/nuxt"],
+  modules: ["@nuxtjs/color-mode", "@pinia/nuxt", "nuxt-gtag"],
   colorMode: {
     preference: "system",
     storageKey: "color-mode",
     classSuffix: "",
+  },
+  gtag: {
+    id: "G-SX25F2LVCY",
   },
   css: ["~/assets/scss/app.scss", "~/assets/css/raleway.css"],
 });
