@@ -1,5 +1,11 @@
 @use "variables";
 
+@mixin min {
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -59,16 +65,27 @@ button {
     &__content {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 1.5rem;
+
+        @include min {
+            justify-content: center;
+        }
     }
 
     &__container {
         max-width: var(--xxl);
         margin: 0 auto;
-
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.25rem;
         justify-content: space-between;
+
+        @include min {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 }
 
@@ -143,4 +160,9 @@ button {
 
 .happy-text {
     margin-bottom: 2rem;
+    padding: 0 1.25rem;
+
+    h1 {
+        text-align: center;
+    }
 }
