@@ -11,6 +11,7 @@ useHead({
   htmlAttrs: {
     lang: "ru",
   },
+  title: "Make Me Happy | @bakkka.wws",
 });
 
 const store = useAppStore();
