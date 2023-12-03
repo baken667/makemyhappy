@@ -7,8 +7,8 @@ const store = useAppStore();
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__left footer__content">
-        <a href="https://instagram.com/bakkka.wws" target="_blank"
-          >@bakkka.wws</a
+        <a href="https://instagram.com/catstore404" target="_blank"
+          >@catstore404</a
         >
       </div>
       <div class="footer__right footer__content">
